@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
-@Document(collection = "movies")
+@Document(collection = "Movies")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,8 +15,8 @@ public class Movie {
     private String id;
     private String imdbId;
     private String title;
-    private String genre;
-    private int releaseYear;
+    private List<String> genre;
+    private String releaseDate;
     private List<String> reviewIds;
 
 }
