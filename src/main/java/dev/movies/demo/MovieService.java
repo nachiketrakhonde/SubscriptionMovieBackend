@@ -17,6 +17,7 @@ public class MovieService {
     public Movie createMovie(Movie movie){
         return movieRepository.save(movie);
     }
+
     public void addReviewToMovie(String imdbId,Review review){
         mongoTemplate.update(Movie.class).matching(Criteria.where("imdbId").is(imdbId)).apply(new Update().push("reviewIds").value(review.getId())).first();
     }
