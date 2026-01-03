@@ -15,7 +15,7 @@ public class Movie {
     private String id;
     private String imdbId;
     private String title;
-    private List<String> genre;
+    private List<String> genres;
     private String releaseDate;
     private List<String> reviewIds;
 
