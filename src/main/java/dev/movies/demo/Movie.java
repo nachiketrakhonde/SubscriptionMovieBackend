@@ -18,5 +18,7 @@ public class Movie {
     private List<String> genres;
     private String releaseDate;
     private List<String> reviewIds;
+    private String trailerLink;
+    private List<String> backdrops;
 
 }
